@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bosphorus Store</title>
+    <script
+      src="https://kit.fontawesome.com/d0bad20f39.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <div id="header">
+      <a href="../index.html">
+        <img
+          src="../img/mobile_menu_tmok_b_logo_tr.png"
+          alt="tmok logo"
+          id="logo"
+        />
+      </a>
+      <nav>
+        <ul id="navbar">
+          <li><a href="../index.html">Anasayfa</a></li>
+          <li><a class="active" href="#">Ürünler</a></li>
+          <li><a href="#footerpart">İletişim</a></li>
+          <!-- <li id="lg-bag">
+            <a href="./cart.html"
+              ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+            ></a>
+          </li> -->
+          <img src="../img/storelogo.png" id="logo" alt="" />
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </nav>
+      <div id="mobile">
+        <!--<a href="./cart.html"
+          ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+        ></a>-->
+        <i id="bar" class="fas fa-outdent"> </i>
+      </div>
+    </div>
+
+    <div id="urundetay" class="section-p1">
+      <div class="single-pro-image">
+        <img
+          src="../img/Urunler/KirmiziTisortOn.png"
+          width="100%"
+          id="MainImg"
+          alt="Beyaz Tişört"
+        />
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="../img/Urunler/KirmiziTisortArka.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+
+          <div class="small-img-col">
+            <img
+              src="../img/Urunler/KirmiziTisortOn.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="../img/Urunler/KirmiziTisortArka.png"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="../img/Urunler/KirmiziTisort.jpeg"
+              width="100%"
+              class="small-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="single-pro-details">
+        <h6>Tişört</h6>
+        <h4>Yarış Logolu Boğaziçi Anı Tişört</h4>
+        <h2>450 TL</h2>
+        <select>
+          <option>Beden Seçiniz</option>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+          <option>X-Large</option>
+        </select>
+        <p><strong>Kod:</strong> BS 0006</p>
+        <h4>Satın Alım</h4>
+        <span>
+          Lütfen, satın almak istediğiniz ürünün kodu ve bedeni ile birlikte
+          aşağıda belirtilen iletişim bilgilerimizi kullanarak bizimle iletişime
+          geçiniz.
+        </span>
+        <br />
+        <p><strong>Telefon:</strong> 0533 020 16 77</p>
+        <p><strong>E-posta:</strong> burak@brsevent.com</p>
+      </div>
+    </div>
+
+    <footer class="section-p1" id="footerpart">
+      <div class="footer">
+        <div class="col footerlogo">
+          <img src="../img/mobile_menu_tmok_b_logo_tr.png" id="footerlogo" />
+        </div>
+        <div class="col">
+          <h4>İletişim</h4>
+          <div class="col-brs">
+            <div class="contact-details">
+              <img src="../img/brslogo.png" alt="" id="footerlogo" />
+              <div class="details">
+                <h5 style="color: white; margin-bottom: 10px">
+                  BRS Eğitim Danışmanlık Turizm ve Organizasyon Ticaret LTD.
+                  ŞTİ.
+                </h5>
+                <p>
+                  <strong>Adres:</strong> Suadiye Mah. Yusuf Çavuş Sok.
+                  <br />
+                  İzzetbey Apt. No:16 Daire:3<br />
+                  Kadiköy/İstanbul
+                </p>
+                <p><strong>Telefon:</strong> 0216 540 15 06</p>
+                <p><strong>Cep:</strong> 0533 020 16 77</p>
+                <p><strong>E-posta:</strong> burak@brsevent.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>2023 | Tüm Hakları Saklıdır</p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+    <script>
+      var MainImg = document.getElementById("MainImg");
+      var smallimg = document.getElementsByClassName("small-img");
+
+      smallimg[0].onclick = function name() {
+        MainImg.src = smallimg[0].src;
+      };
+      smallimg[1].onclick = function name() {
+        MainImg.src = smallimg[1].src;
+      };
+      smallimg[2].onclick = function name() {
+        MainImg.src = smallimg[2].src;
+      };
+      smallimg[3].onclick = function name() {
+        MainImg.src = smallimg[3].src;
+      };
+    </script>
+  </body>
+</html>

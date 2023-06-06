@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bosphorus Store</title>
+    <script
+      src="https://kit.fontawesome.com/d0bad20f39.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="header">
+      <a href="./index.html">
+        <img
+          src="./img/mobile_menu_tmok_b_logo_tr.png"
+          alt="tmok logo"
+          id="logo"
+        />
+      </a>
+      <nav>
+        <ul id="navbar">
+          <li><a href="./index.html">Anasayfa</a></li>
+          <li><a href="./urunler">Ürünler</a></li>
+          <li><a href="./iletisim">İletişim</a></li>
+          <li id="lg-bag">
+            <a class="active" href="./cart.html"
+              ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+            ></a>
+          </li>
+          <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+      </nav>
+      <div id="mobile">
+        <a href="./cart.html"
+          ><i class="fa-sharp fa-solid fa-cart-shopping"></i
+        ></a>
+        <i id="bar" class="fas fa-outdent"> </i>
+      </div>
+    </div>
+
+    <div id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>SİL</td>
+            <td>Fotoğraf</td>
+            <td>ÜRÜN</td>
+            <td>Fİyat</td>
+            <td>Adet</td>
+            <td>Toplam</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/Urunler/BeyazTisortOn.png" alt="" /></td>
+            <td>Beyaz Tişört</td>
+            <td>500 TL</td>
+            <td><input type="number" value="1" /></td>
+            <td>500 TL</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/Urunler/Anahtarlik.jpeg" alt="" /></td>
+            <td>Anahtarlık</td>
+            <td>500 TL</td>
+            <td><input type="number" value="1" /></td>
+            <td>500 TL</td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#"><i class="far fa-times-circle"></i></a>
+            </td>
+            <td><img src="img/Urunler/Bardak.jpeg" alt="" /></td>
+            <td>Bardak</td>
+            <td>500 TL</td>
+            <td><input type="number" value="1" /></td>
+            <td>500 TL</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="cart-add" class="section-p1">
+      <div id="subtotal">
+        <h3>Sepet Toplamı</h3>
+        <table>
+          <tr>
+            <td>Toplam</td>
+            <td>1500 TL</td>
+          </tr>
+          <tr>
+            <td>Kargo</td>
+            <td>75 TL</td>
+          </tr>
+          <tr>
+            <td><strong>Toplam</strong></td>
+            <td><strong>1575 TL</strong></td>
+          </tr>
+        </table>
+        <button class="normal">Ödeme Yap</button>
+      </div>
+    </div>
+
+    <footer class="section-p1">
+      <div class="footer">
+        <div class="col footerlogo">
+          <img src="./img/mobile_menu_tmok_b_logo_tr.png" id="footerlogo" />
+        </div>
+        <div class="col">
+          <h4>İletişim</h4>
+          <p>
+            <strong>Adres:</strong> Zuhuratbaba Mah. Dr. Remzi Kazancıgil Cad.
+            <br />
+            Olimpiyatevi No:34/1 <br />
+            Bakırköy/İSTANBUL
+          </p>
+          <p><strong>Telefon:</strong> +90 212 560 07 07</p>
+          <p><strong>Faks:</strong> +90 212 560 00 55</p>
+          <p><strong>E posta:</strong> bogazici@olimpiyat.org.tr</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>2023 | Tüm Hakları Saklıdır</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
