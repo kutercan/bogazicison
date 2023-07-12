@@ -107,6 +107,15 @@
         <br />
         <p><strong>Telefon:</strong> 0533 020 16 77</p>
         <p><strong>E-posta:</strong> burak@brsevent.com</p>
+        <a
+          href="https://api.whatsapp.com/send?phone=905330201677&text=Merhaba, Bosphorus Store üzerinden ulaşıyorum."
+          class="whatsapp-button"
+          target="_blank"
+          id="whatsapp-button"
+        >
+          <i class="fab fa-whatsapp"></i>
+          Whatsapp Üzerinden Sipariş Vermek İçin Tıklayın!
+        </a>
       </div>
     </div>
 
@@ -181,6 +190,14 @@
       smallimg[3].onclick = function name() {
         MainImg.src = smallimg[3].src;
       };
+    </script>
+    <script>
+      document
+        .getElementById("whatsapp-button")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          window.open(this.href, "WhatsApp", "width=500,height=500");
+        });
     </script>
   </body>
 </html>
